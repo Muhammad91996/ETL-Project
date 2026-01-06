@@ -591,8 +591,7 @@ class DatabaseTransfer:
                 i.paid_shipping_amount,
                 s.is_refunded AS is_refunded,
                  osfo.commercial_shipping AS commercial_shipping_fee,
-                 osfo.marketing_shipping AS marketing_shipping_fee,
-
+                 osfo.marketing_shipping AS marketing_shipping_fee,               
                 brand.value AS brand_name,
                 color.value AS variant_id,
                 CASE WHEN i.marketplace_seller IS NULL THEN 'raneen' ELSE i.marketplace_seller END AS seller_name,
