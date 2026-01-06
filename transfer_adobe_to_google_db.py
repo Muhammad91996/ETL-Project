@@ -596,8 +596,6 @@ class DatabaseTransfer:
                 color.value AS variant_id,
                 CASE WHEN i.marketplace_seller IS NULL THEN 'raneen' ELSE i.marketplace_seller END AS seller_name,
 
-                
-                #------------
                 pc.category_path AS product_category_name,
                 i.main_category,
                 i.sub_category,
